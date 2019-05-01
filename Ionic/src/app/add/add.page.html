@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Segundo Parcial</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      Agregar persona
+  
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+            <ion-label>Nombre:</ion-label>
+            <ion-input [(ngModel)]="persona.name" type="text"></ion-input>
+
+        </ion-item>
+        <ion-item>
+            <ion-label>Apellidos:</ion-label>
+            <ion-input [(ngModel)]="persona.apellidos" type="text"></ion-input>
+        </ion-item>
+        <ion-button color="dark" full (click)="Guardar()">Guardar</ion-button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  
+      
+
+</ion-content>
