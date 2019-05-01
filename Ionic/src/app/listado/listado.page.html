@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Segundo Parcial</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  
+
+      <ion-fab vertical="top" horizontal="end" slot="fixed">
+          <ion-fab-button href='/add'>
+            <ion-icon name="add"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+
+  <ion-card>
+    <ion-card-header>
+
+      <ion-card-title>Listado de Personas</ion-card-title>
+ 
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item ion-item *ngFor="let persona of personas">
+          <div>
+            id: {{persona.id}} <br>
+            Nombre:{{persona.name}}<br>
+            Apellidos:{{persona.apellidos}}<br>
+            <ion-button (click)="Editar(persona)" color="warning">Editar</ion-button>
+            <ion-button (click)="Delete(persona)" color="danger">Eliminar</ion-button>
+
+          </div>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

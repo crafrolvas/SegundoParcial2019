@@ -1,0 +1,7 @@
+{
+  "name": "PersonaIonic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
